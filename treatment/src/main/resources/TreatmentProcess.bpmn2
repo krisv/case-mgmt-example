@@ -4,6 +4,9 @@
   <bpmn2:itemDefinition id="_doctorItem" structureRef="String"/>
   <bpmn2:process id="treatment.TreatmentProcess" drools:adHoc="true" drools:packageName="org.jbpm" drools:version="1.0" name="TreatmentProcess" isExecutable="true">
     <bpmn2:extensionElements>
+      <drools:metaData name="customCaseRoles">
+        <drools:metaValue><![CDATA[patient:1,doctor:1,participant]]></drools:metaValue>
+      </drools:metaData>
       <drools:metaData name="customDescription">
         <drools:metaValue><![CDATA[Treatment Patient #{patient}]]></drools:metaValue>
       </drools:metaData>
